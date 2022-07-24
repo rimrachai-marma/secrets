@@ -1,0 +1,18 @@
+<%- include('partials/header') %>
+
+<main>
+  <div class="form-container">
+    <div class="form-box">
+      <h2>Submit a secret</h2>
+      <form action="/submit" method="POST">
+        <div class="form-group">
+          <label>Secret</label>
+          <input type="text" name="secret" required />
+        </div>
+        <button>submit</button>
+      </form>
+    </div>
+  </div>
+</main>
+
+<%- include('partials/footer') %>

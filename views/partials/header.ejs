@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h2><a href="/">secrets</a></h2>
+      <nav>
+        <ul>
+          <li><a href="/secrets">secrets</a></li>
+        </ul>
+        <ul>
+          <%if(user){%>
+          <li><a href="/logout">logout</a></li>
+          <%}else{%>
+          <li><a href="/login">login</a></li>
+          <li><a href="/register">register</a></li>
+          <%}%>
+        </ul>
+      </nav>
+    </header>
+
